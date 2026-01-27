@@ -1,2 +1,10 @@
 
-   
+   git clone https://github.com/AkshayAdak003/-Campus-Trainings.git
+
+cd campus-Trainings
+
+git checkout -b develop
+
+echo "# Campus Trainings Repository" > README.md echo "This repository contains training materials and resources for campus sessions." >> README.md
+
+git add README.md
