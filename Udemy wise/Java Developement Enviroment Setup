@@ -1,10 +1,55 @@
+package com.epam.campus;
 
-   git clone https://github.com/AkshayAdak003/-Campus-Trainings.git
+/**
+ * Hello world!
+ */
+public class App {
 
-cd campus-Trainings
+    public static void main(String[] args) {
 
-git checkout -b develop
+        String input = "aabbccaaa";
 
-echo "# Campus Trainings Repository" > README.md echo "This repository contains training materials and resources for campus sessions." >> README.md
+        try {
+            String compressed = StringCompressor.compress(input);
+            System.out.println("Original String: " + input);
+            System.out.println("Compressed String: " + compressed);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
 
-git add README.md
+
+class StringCompressor {
+
+    private StringCompressor() {
+        
+    }
+
+    public static String compress(String input) {
+
+        if (input == null || input.isEmpty()) {
+            throw new IllegalArgumentException("Input string cannot be null or empty");
+        }
+
+        StringBuilder result = new StringBuilder();
+
+        int count = 1;
+        char currentChar = input.charAt(0);
+
+        for (int i = 1; i < input.length(); i++) {
+            if (input.charAt(i) == currentChar) {
+                count++;
+            } else {
+                result.append(currentChar).append(count);
+                currentChar = input.charAt(i);
+                count = 1;
+            }
+        }
+
+        
+        result.append(currentChar).append(count);
+
+        return result.toString();
+    }
+}
