@@ -55,7 +55,46 @@ list.remove(10);   // removes index 10, NOT value 10
 
 
 
+HEAP
+import java.util.PriorityQueue;
+PriorityQueue<Integer> pq = new PriorityQueue<>();  // min-heap
+PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());   // max-heap
+pq.add(10);        // insert
+pq.poll();         // remove top
+pq.peek();         // top
+pq.size();
+pq.isEmpty();
+pq.contains(10);
+pq.clear();
 
-JAVA STACK,QUEUE,HEAP
+
+
+Queue
+import java.util.Queue;
+import java.util.LinkedList;
+Queue<Integer> q = new LinkedList<>();
+Queue<Integer> q = new ArrayDeque<>();
+q.add(10);      // insert (exception if fails)
+q.offer(20);    // insert (returns false if fails)
+q.poll();       // remove
+q.remove();     // remove (exception)
+q.peek();       // front
+q.element();    // front (exception)
+q.isEmpty();
+q.size();
+
+
+
+
+
+STACK OR BY DEQUE
+Deque<Integer> dq = new ArrayDeque<>();
+dq.addFirst(10);
+dq.addLast(20);
+dq.removeFirst();
+dq.removeLast();
+dq.peekFirst();
+dq.peekLast();
+
 
 
