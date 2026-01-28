@@ -1,17 +1,16 @@
 --------------------------------------------Java Methods for Codility-------------------------------------------------
 
 ARRAY :
-
 import java.util.Arrays;
-
 int[] arr = new int[sz];   // default values = 0
 Arrays.sort(arr);
 int idx = Arrays.binarySearch(arr, 5);
 
 
 
-STRING :
 
+
+STRING :
 int len = s.length();   // 11
 s.isEmpty();   // false
 "   ".isBlank();  // true
@@ -20,7 +19,6 @@ s.substring(0, 5);   // "Hello"
 s.toUpperCase();
 s.toLowerCase();
 int num = Integer.parseInt("123");
-
 StringBuilder sb = new StringBuilder();
 sb.append("Hello");
 sb.append(" ");
@@ -28,12 +26,15 @@ sb.append("World");
 String result = sb.toString();
 
 
-JAVA ARRAYLIST :
 
+
+
+
+
+
+JAVA ARRAYLIST :
 import java.util.ArrayList;
 import java.util.Collections;
-
-
 ArrayList<Integer> list = new ArrayList<>();
 list.clear();
 for(int i = 0; i < list.size(); i++) {
@@ -49,5 +50,12 @@ Collections.max(list);
 Collections.min(list);
 list.remove(Integer.valueOf(10)); // removes value 10
 list.remove(10);   // removes index 10, NOT value 10
+
+
+
+
+
+
+JAVA STACK,QUEUE,HEAP
 
 
