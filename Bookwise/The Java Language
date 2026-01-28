@@ -1,1 +1,29 @@
+--------------------------------------------Java Methods for Codility-------------------------------------------------
+
+ARRAY :
+
+import java.util.Arrays;
+
+int[] arr = new int[sz];   // default values = 0
+Arrays.sort(arr);
+int idx = Arrays.binarySearch(arr, 5);
+
+
+
+STRING :
+
+int len = s.length();   // 11
+s.isEmpty();   // false
+"   ".isBlank();  // true
+char ch = s.charAt(1);  // 'e'
+s.substring(0, 5);   // "Hello"
+s.toUpperCase();
+s.toLowerCase();
+int num = Integer.parseInt("123");
+
+StringBuilder sb = new StringBuilder();
+sb.append("Hello");
+sb.append(" ");
+sb.append("World");
+String result = sb.toString();
 
