@@ -27,3 +27,27 @@ sb.append(" ");
 sb.append("World");
 String result = sb.toString();
 
+
+JAVA ARRAYLIST :
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+ArrayList<Integer> list = new ArrayList<>();
+list.clear();
+for(int i = 0; i < list.size(); i++) {
+    System.out.print(list.get(i));
+}
+Iterator<Integer> it = list.iterator();
+while(it.hasNext()) {
+    System.out.print(it.next());
+}
+Collections.sort(list);
+Collections.reverse(list);
+Collections.max(list);
+Collections.min(list);
+list.remove(Integer.valueOf(10)); // removes value 10
+list.remove(10);   // removes index 10, NOT value 10
+
+
