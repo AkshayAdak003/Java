@@ -1,0 +1,227 @@
+🔥 1️⃣ Basic String Questions
+
+What is a String in Java?
+
+Why is String immutable in Java?
+
+Where are Strings stored in memory?
+
+What is the String Constant Pool?
+
+Difference between == and .equals() in String?
+
+Why are Strings immutable but StringBuilder mutable?
+
+How many objects are created in:
+
+String s = new String("Java");
+
+What happens if we create multiple identical string literals?
+
+Is String thread-safe?
+
+Why is String final?
+
+🔥 2️⃣ String Pool & Memory (Very Important)
+
+What is String intern() method?
+
+How does intern() behave in Java 6 vs Java 8+?
+
+Where is String pool stored (PermGen vs Heap)?
+
+How does JVM check if literal already exists?
+
+When is a string added to the pool?
+
+Does new String() use pool?
+
+What happens in:
+
+String s1 = "abc";
+String s2 = new String("abc");
+
+Can pool strings be garbage collected?
+
+What happens if pool memory is full?
+
+How does class loading affect string literals?
+
+🔥 3️⃣ Compile-Time vs Runtime Questions
+
+Difference between:
+
+"a" + "b"
+
+and
+
+s1 + "b"
+
+What is constant folding?
+
+How does compiler optimize string concatenation?
+
+What bytecode is generated for string concatenation?
+
+When does StringBuilder get used internally?
+
+What happens if we use final variable in concatenation?
+
+Is this pooled?
+
+final String s = "abc";
+String x = s + "def";
+🔥 4️⃣ equals(), hashCode(), compareTo()
+
+How does equals() work internally?
+
+How does hashCode() work for String?
+
+Why is hashCode cached in String?
+
+Difference between equals() and compareTo()
+
+What happens if equals is true but hashCode different?
+
+Why String is good key for HashMap?
+
+How does String prevent hash collision attacks?
+
+What is the time complexity of equals()?
+
+🔥 5️⃣ Immutability Deep Dive
+
+Why was String made immutable?
+
+Security reasons behind immutability?
+
+How does immutability help in caching?
+
+How does immutability make String thread-safe?
+
+Can we break String immutability using reflection?
+
+Why StringBuilder is not immutable?
+
+What happens internally when modifying a String?
+
+🔥 6️⃣ Performance Questions
+
+Why is string concatenation in loop bad?
+
+Difference between StringBuffer and StringBuilder?
+
+Which is faster and why?
+
+How does StringBuilder expand capacity?
+
+What is default capacity?
+
+What is substring() time complexity?
+
+Was substring() sharing char[] before Java 7?
+
+What changed in Java 7 update 6?
+
+🔥 7️⃣ Advanced / JVM Internals
+
+How is String stored internally? (char[] vs byte[])
+
+What is Compact Strings (Java 9)?
+
+What is coder field in String?
+
+How is UTF-16 handled?
+
+What is string deduplication in G1 GC?
+
+How does JVM optimize String switch-case?
+
+How does String get optimized at JIT level?
+
+How is String concatenation optimized in Java 9+?
+
+🔥 8️⃣ Tricky Output Questions
+String s1 = "Java";
+String s2 = "Ja" + "va";
+String s1 = "Java";
+String s2 = new String("Java");
+String s1 = "Java";
+String s2 = s1 + "";
+final String s1 = "Java";
+String s2 = s1 + "X";
+String s1 = new String("abc").intern();
+String s = null;
+System.out.println(s + "test");
+System.out.println("abc" == "abc");
+🔥 9️⃣ String Methods Deep Questions
+
+Difference between trim() and strip()?
+
+Difference between replace() and replaceAll()?
+
+Why is split() slow?
+
+What regex engine does split() use?
+
+Difference between matches() and contains()?
+
+How does indexOf() work internally?
+
+What is regionMatches()?
+
+Difference between valueOf() and toString()?
+
+🔥 🔟 Real-World Interview Questions
+
+How would you reverse a string efficiently?
+
+Check if two strings are anagrams?
+
+Check palindrome without extra space?
+
+Count duplicate characters?
+
+Find first non-repeating character?
+
+Longest substring without repeating characters?
+
+Implement your own String class (design question)
+
+Implement custom intern mechanism
+
+How would you design a high-performance string parser?
+
+Why String is used in switch-case but not custom objects?
+
+🔥 1️⃣1️⃣ Security Questions
+
+Why password should be stored in char[] not String?
+
+Why String used in classloader?
+
+Why URL and file paths use String?
+
+What is string injection attack?
+
+How does Java protect string literals?
+
+🔥 1️⃣2️⃣ Extreme Advanced
+
+Can we modify String’s internal byte[]?
+
+How does String deduplication reduce memory?
+
+What is invokedynamic in string concatenation?
+
+How does StringBuilder differ at bytecode level?
+
+How does GraalVM optimize strings?
+
+What is difference between heap and off-heap string storage?
+
+Can String cause memory leak?
+
+What is string table size?
+
+What JVM flags control String pool?
